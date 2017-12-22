@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+
+    <title>OTS Graphics Leaflet Map Template</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+   <script src="http://data.nbcstations.com/js/crosstalk.js"></script>
+    <script type="text/javascript">
+         document.addEventListener("DOMContentLoaded", function() {
+            xtalk.responsive = false;
+            xtalk.init();
+         });
+    </script>
+  
+  </head>
+
+  <body>
+  <div id="xtalk" class="parent" style="width:100%; padding-bottom:130px;">
+    <div class="headline">EPA Superfund Sites in Flood-Prone Areas</div>
+    <div class="explainer">
+      <p>Enter a location to see superfund sites nearby: <input id="zip-input"></input></p>
+      <p id="warning">Location not found.</p>
+    </div>
+    <!-- Start content here -->
+
+    <div id="container">
+
+    </div>
+    <div class="credits">
+      Data: EPA, U.S. Census, Analysis by AP <br />
+      Graphic: Sam Hart/NBC
+    </div> 
+   </div>
+
+  <script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
