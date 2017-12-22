@@ -1,15 +1,15 @@
 # NBC OTS Leaflet Map Tool
 This is a node.js project for a graphic with a Leaflet map used on our sites. It features live editing capability via Google Sheets (with Sheetsy), and webpack's hot reload functionality for development.
 ## Requirements
-Before you get started, you should have the latest version of Node installed on your machine. That should be it, but if you run into any weird errors just let me know. 
+Node.js should be installed on your machine.
+## To make any changes to the graphic
+Clone the repo onto your machine.
+```
+git clone https://github.com/swhart22/contaminants.git 
+```
 ## Development
-Navigate to the empty directory you've created for your project. Then run: 
 ```
-curl -fsSL https://github.com/swhart22/nbcots-leaflet-gfx/archive/master.tar.gz | tar -xz --strip-components=1
-```
-Then:
-```
-npm i
+cd contaminants
 ```
 Then:
 ```
@@ -17,7 +17,15 @@ npm run start
 ```
 If all went well, your browser should open up a tab on localhost:3000 with the development version of your map.
 
-The project comes with d3 installed, so you will be able to add an svg layer using d3 on top of the leaflet tile. See how <a href="https://gist.github.com/Sumbera/7e8e57368175a1433791" target="_blank">here</a>. You can also just use leaflet's built in tooltips and markers.  
+If you get errors: 
+
+Try running `npm i` in the root directory. This will ensure all node dependencies are installed.
+
+Make sure nothing else is running on port 3000.
+
+## File system
+
+All the code for the graphic is in ./src/js/draw.js in the draw function. If you make changes while the server is running, it will update live without you having to refresh. 
 
 ## Production
 
